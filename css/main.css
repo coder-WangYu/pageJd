@@ -1,0 +1,635 @@
+@import "../css/common.css";
+
+document {
+    min-width: 1440px;
+}
+
+/* 头部导航 */
+.header {
+    width: 100%;
+    height: 30px;
+    background: #e3e4e5;
+    line-height: 28px;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #999;
+    box-sizing: border-box;
+}
+
+.header .header-content {
+    height: 100%;
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.header .header-content .position {
+    height: 30px;
+    line-height: 27px;
+    float: left;
+    cursor: pointer;
+    width: 70px;
+    box-sizing: border-box;
+}
+
+.header .header-content .position .dropDown {
+    display: none;
+}
+
+.position .dropDown dl {
+    padding-left: 10px;
+    float: left;
+}
+
+.position .dropDown dl dd {
+    float: left;
+}
+
+.header .header-content .position .title {
+    padding-left: 5px;
+    border: 1px solid #e3e4e5;
+}
+
+.header .header-content .position:hover {
+    color: rgb(209, 22, 22);
+}
+
+.header .header-content .position i {
+    font-size: 13px;
+    color: red;
+    vertical-align: middle;
+}
+
+.header .header-content .nav-list {
+    float: right;
+}
+
+.header .header-content .nav-list i {
+    font-size: 5px;
+}
+
+.header .header-content .nav-list li {
+    box-sizing: content-box;
+    float: left;
+    margin: 0 1px;
+    position: relative;
+}
+
+.header .header-content .nav-list li:nth-last-child(n + 4) a:hover {
+    color: rgb(209, 22, 22);
+}
+
+.nav-list .dropDown {
+    position: absolute;
+    border-left: 1px solid #ddd; 
+    border-right: 1px solid #ddd;
+    display: none;
+}
+
+.nav-list .spacer {
+    vertical-align: -1px;
+    line-height: 24px;
+}
+
+.nav-list .dropDown dl {
+    overflow: hidden;
+    padding: 5px 0 5px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-list .dropDown dl dd a {
+    color: #999;
+}
+
+.nav-list .dropDown dl dd a:hover {
+    color: rgb(209, 22, 22);
+}
+
+.nav-list .dropDown dl dd {
+    float: left;
+}
+
+.nav-list li .title {
+    padding: 0 8px;
+    border: 1px solid #e3e4e5;
+}
+
+/* 搜索区域 */
+.search {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.search .search-content {
+    z-index: -1;
+    width: 1190px;
+    margin: 0 auto;
+    /* position: relative; */
+}
+
+.search-content a img {
+    width: 190px;
+    height: 120px;
+}
+
+.search-content .search-area {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.search-area .search-input {
+    margin-left: 70px;
+    height : 36px;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.search-input input {
+    border: 2px solid #e1251b;
+    width: 530px;
+    height: 32px;
+    font-size: 12px;
+    text-indent: 2em;
+}
+
+.search-input a .icon-zhaoxiang {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+}
+
+.search-input #search-content {
+    position: absolute;
+    width: 479px;
+    background: #fff;
+    z-index: 200;
+    margin-top: 1px;
+}
+
+.search-input #search-content li {
+    margin: 15px 10px;
+    cursor: pointer;
+    padding: 5px 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.search-input a .icon-zhaoxiang:hover {
+    color: #e1251b;
+}
+
+.search-input button {
+    position: absolute;
+    cursor: pointer;
+    right: 1px;
+    top: 1px;
+    width: 55px;
+    height: 100%;
+    background: #e1251b;
+    color: #fff;
+}
+
+.search-input button:hover {
+    background: rgb(180, 9, 9);
+}
+
+.search-input button i {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search-area .shop-car {
+    margin-left: 20px;
+    padding: 10.5px 18px;
+    line-height: 12px;
+    border: 1px solid #ddd;
+    color: #e1251b;
+    font-size: 12px;
+    position: relative;
+}
+
+.search-area .shop-car i.icon-gouwuche {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.search-area .shop-car i.icon-qipao {
+    font-size: 26px;
+    position: absolute;
+    left: 30px;
+    top: 0;
+}
+
+.search-area .shop-car i.icon-qipao::after {
+    content:"0";
+    position: absolute;
+    font-size: 10px;
+    color: #fff;
+    top: 0;
+    right: 9px;
+}
+
+.search-content .hot-info {
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.search-content .hot-info a {
+    margin-right: 5px;
+    color: #999;
+}
+
+.search-content .hot-info a:hover {
+    color: #e1251b;
+}
+
+.search-content .logo-right {
+    position: absolute;
+    top: 40px;
+    right: 130px;
+}
+
+.search-content .nav-item .items {
+    margin: 20px 10px;
+}
+
+.search-content .nav-item .items li {
+    float: left;
+}
+
+.nav-item .items li a {
+    height: 40px;
+    color: #333;
+    margin: 0px 10px;
+    line-height: 40px;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.nav-item .items li a:hover {
+    color: #e1251b;
+}
+
+/* fs区域 */
+.fs {
+    width: 100%;
+    height: 480px;
+    background: #eee;
+}
+
+.fs .fs-content {
+    position: relative;
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.fs-col1 {
+    height: 480px;
+    width: 190px;
+    margin-right: 10px;
+}
+
+.fs-col1 .left-nav {
+    height: 470px;
+    margin-top: 10px;
+    background: #fff;
+}
+
+.fs-col1 .func-list {
+    font-size: 14px;
+    color: #333;
+    padding: 10px 0px;
+}
+
+.fs-col1 .func-list li {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 12px;
+}
+
+.fs-col1 .func-list li:hover {
+    background: #eee;
+}
+
+.fs-col1 .func-list li a {
+    cursor: pointer;
+}
+
+.fs-col1 .func-list li a:hover {
+    color: #e1251b;
+}
+
+.fs-col1 .menu-content {
+    display: none;
+    position: absolute;
+    width: 998px;
+    min-height: 465px;
+    background: #fff;
+    border: 2px solid #f7f7f7;
+    box-shadow: #666 0px 0px 4px 1px,
+                #666 0px 0px 4px 1px;
+    font-size: 14px;
+    color: #333;
+    left: 190px;
+    top: 10px;
+    z-index: 21;
+}
+
+.menu-content ul {
+    margin: 20px 10px;
+    overflow: hidden;
+}
+
+.menu-content li {
+    float: left;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 0 10px;
+    font-size: 13px;
+    background: #333;
+    cursor: pointer;
+}
+
+.menu-content li i {
+    font-size: 12px;
+}
+
+.menu-content li:hover {
+    background: #c81623;
+}
+
+.menu-content .item-content dl {
+    overflow: hidden;
+    padding: 5px 0;
+    font-size: 13px;
+}
+
+.item-content dl dt {
+    font-weight: bold;
+    float: left;
+    width: 70px;
+    text-align: right;
+}
+
+.item-content dl dd {
+    float: left;
+    width: 700px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.item-content dl dd a {
+    display:inline-block;
+    margin-right: 7px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.item-content dl dd a:hover {
+    color: #c81623;
+}
+
+.fs-content .fs-col2 {
+    height: 480px;
+    width: 790px;
+    display: inline-block;
+}
+
+.fs-col2 .slider-list {
+    height: 470px;
+    margin-top: 10px;
+}
+
+.fs-col2 .moreImages-slider {
+    width: 190px;
+    height: 470px;
+}
+
+.fs-col2 .moreImages-slider li {
+    margin-top: 10px;
+}
+
+.fs-content .fs-col3 {
+    height: 480px;
+    width: 190px;
+}
+
+.fs-col3 .service-list {
+    position: relative;
+    height: 470px;
+    margin-top: 10px;
+    background: #fff;
+}
+
+.service-list .user {
+    position: absolute;
+    width: 160px;
+    top: 0px;
+    left: 15px;
+}
+
+.service-list .user .login img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.904);
+}
+
+.service-list .user .login a:hover {
+    color: #c81623;
+}
+
+.service-list .user .login a:nth-child(2) {
+    margin-top: 15px;
+}
+
+.service-list .user .login a:nth-child(3) {
+    margin-top: 0px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.service-list .user .login a:nth-child(3):hover {
+    color: #c81623;
+}
+
+.service-list .user .login a:last-child:hover {
+    color: #c81623;
+}
+
+.service-list .user .login a:last-child {
+    margin-top: 0px;
+    color: #333;
+}
+
+.service-list .user .login span {
+    font-size: 12px;
+    margin-top: 0px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.service-list .user .login a {
+    margin: 10px 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.user button {
+    padding: 5px 13px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.user .left-btn {
+    background: #e1251b;
+    color: #fff;
+}
+
+.user .left-btn:hover {
+    background: #c81623;
+}
+
+.user .right-btn {
+    background: #363634;
+    color: #e5d790;
+}
+
+.user .right-btn:hover {
+    background: #c81623;
+    color: #fff;
+}
+
+.service-list .user {
+    height: 110px;
+    border-bottom: 1px solid #999;
+}
+
+.service-list .news {
+    width: 170px;
+    height: 140px;
+    position: absolute;
+    top: 120px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.news .title span {
+    cursor: pointer;
+}
+
+.news .title span.right {
+    margin-top: 2px;
+    color: #666;
+    font-size: 12px;
+}
+
+.news .title span > i {
+    font-size: 10px;
+}
+
+.news {
+    border-bottom: 1px solid #999;
+}
+
+.news .content {
+    margin: 10px 0;
+}
+
+.news .content a {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 160px;
+    height: 12px;
+    padding: 5px;
+    line-height: 12px;
+    margin: 5px;
+    font-size: 12px;
+    color: #999;
+}
+
+.news .content a:hover {
+    color: #c81623;
+}
+
+.news .content a div {
+    display: inline-block;
+    color: #c81623;
+    padding: 3px;
+    background: rgba(225,37,27,.08);
+}
+
+.news .content a span {
+    display: inline;
+}
+
+.service-list .service {
+    position: absolute;
+    width: 170px;
+    top: 265px;
+    left: 10px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.service .service-entry i {
+    font-size: 28px;
+}
+
+.service .service-entry li {
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    float: left;
+    width: 50px;
+    margin: 0 3px;
+}
+
+.service .service-entry li p {
+    margin: 5px 0;
+}
+
+.service .service-pop {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    height: 180px;
+    background: #fff;
+    transition: top .5s;
+}
+
+.service-entry.service-extend + .service-pop {
+    top: 23px;
+}
+
+.service-entry.service-extend .item-frame {
+    transition: margin-top .5s;
+    margin-top: -28px;
+}
+
+.service-pop .close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.service-pop .close:hover {
+    background: #c81623;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.service-pop .close i {
+    font-size: 14px;
+}
